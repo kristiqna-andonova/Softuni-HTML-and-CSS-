@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(164,29,253,1) 50%, rgba(84,69,252,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            min-height: 100vw;
+            flex-direction: column;
+        }
+
+        .list {
+            display: flex;
+            gap: 2em;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .card {
+            flex: 0 0 60px;
+            width: 60px;
+            height: 400px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in;
+            position: relative;
+            border-radius: 0.4em;
+        }
+
+        .card:hover {
+            width: 400px;
+            flex: 0 0 400px;
+        }
+
+        .card img {
+            width: auto;
+            height: 100%;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="card"><img src="Image1.jpg" alt=""></div>
+        <div class="card"><img src="Image2.jpg" alt=""></div>
+        <div class="card"><img src="Image3.jpg" alt=""></div>
+        <div class="card"><img src="Image4.jpg" alt=""></div>
+    </div>
+        
+</body>
+</html>

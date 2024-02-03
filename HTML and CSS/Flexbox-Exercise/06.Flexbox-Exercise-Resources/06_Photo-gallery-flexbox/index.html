@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            gap: 1em;
+        }
+        
+        body, ul , li {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            justify-content: space-between;
+        }
+        body {
+            padding: 2em;
+            
+        }
+
+        .gallery {
+            max-width: 80em;
+            margin: 0 auto;
+        }
+
+        .gallery li {
+            border: 8px solid #000;
+            padding: 1em;
+            align-items: center;
+            flex: 0 0 250px;
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery">
+        <ul type="none">
+            <li><img src="images/picture1.jpg" alt=""></li>
+            <li><img src="images/picture2.jpg" alt=""></li>
+            <li><img src="images/picture3.jpg" alt=""></li>
+            <li><img src="images/picture4.jpg" alt=""></li>
+            <li><img src="images/picture5.jpg" alt=""></li>
+            <li><img src="images/picture6.jpg" alt=""></li>
+            <li><img src="images/picture7.jpg" alt=""></li>
+            <li><img src="images/picture8.jpg" alt=""></li>
+            <li><img src="images/picture9.jpg" alt=""></li>
+        </ul>
+    </section>
+</body>
+</html>
