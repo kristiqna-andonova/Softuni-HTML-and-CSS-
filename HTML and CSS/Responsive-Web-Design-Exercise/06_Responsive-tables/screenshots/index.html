@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        @media (max-width: 400px){
+            .sticky-header th {
+            position: sticky;
+            left: 0;
+            background-color: white; /* Ensure the headers are visible */
+            z-index: 2; /* Ensure headers are above other cells */
+            }
+
+            .sticky-header th:nth-child(1) {
+            top: 0;
+            }
+
+            .sticky-header th:nth-child(2) {
+            top: 30px; /* Adjust based on your header height */
+            }
+
+            .sticky-header th:nth-child(3) {
+            top: 60px; /* Adjust based on your header height */
+            }
+
+}
+
+
+        
+                
+
+        
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table class="sticky-header" style="width:100%">
+          <thead>
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Job Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>james</td>
+              <td>Matman</td>
+              <td>Chief Sandwich Eater</td>
+            </tr>
+            <tr>
+              <td>Jon</td>
+              <td>Doe</td>
+              <td>Chief Executive Eater</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      
+</body>
+</html>

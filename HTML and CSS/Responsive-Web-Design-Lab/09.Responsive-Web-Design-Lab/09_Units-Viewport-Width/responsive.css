@@ -1,0 +1,9 @@
+@media (max-with: 95vw){
+    body {
+        width: 95vw;
+    }
+
+    img {
+        width: 95vw;
+    }
+}
